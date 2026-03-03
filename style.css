@@ -1,0 +1,220 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+}
+
+/* Container Layout */
+.container {
+  display: flex;
+}
+
+/* Sidebar - Fixed */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 350px;
+    background-color: #121212;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+
+.sidebar .profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.sidebar h2 {
+    margin: 20px 0 10px 0;  /* add top and bottom spacing */
+    font-size: 26px;        /* bigger */
+    font-weight: 700;       /* bolder */
+    text-align: center;     /* center it */
+}
+
+.sidebar p {
+    font-size: 14px;
+    margin-bottom: 12px; 
+    text-align: center;
+}
+
+
+/* Main Content shifts right */
+.main-content {
+    margin-left: 400px;
+    padding: 60px 40px;
+    width: 100%;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.tabs a {
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 600;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.tabs a.active,
+.tabs a:hover {
+    color: #fff;
+    border-bottom: 2px solid #00aaff;
+}
+
+/* About Section */
+.about h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* What I'm Doing Section */
+.what-im-doing h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #121212;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 170, 255, 0.3);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #00aaff;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+/* Projects Section */
+.projects {
+    padding: 40px 0;
+}
+
+.card {
+    background-color: #1f1f1f;
+    padding: 25px 30px;
+    border-radius: 12px;
+    margin-bottom: 30px; /* space between cards */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 170, 255, 0.3);
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #00aaff;
+    margin-bottom: 8px;
+}
+
+.card .project-date {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 12px;
+}
+
+.card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.card li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+/* Remove grid layout */
+.project-grid {
+    display: block; /* instead of grid */
+}
+
+
+
+/* Skills Section */
+
+.skill-category {
+    margin-bottom: 25px;
+}
+
+.skill-category h3 {
+    font-size: 20px;
+    color: #00aaff;
+    margin-bottom: 8px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-list span {
+    background-color: #121212;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.skill-list span:hover {
+    background-color: #00aaff;
+    color: #121212;
+    cursor: default;
+}
+
+.about p {
+    margin-bottom: 20px; /* Adjust spacing as needed */
+    line-height: 1.6;    /* Optional: improves readability */
+}
+
