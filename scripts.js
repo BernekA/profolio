@@ -68,18 +68,11 @@ class MainView {
                     <section class="about card">
                         <h1>About Me</h1>
                         <p>
-                        Hi, I’m Bernek Aujla, a computer engineering student at the University of British Columbia with a strong interest in 
-                        robotics, embedded systems, FPGA design, and autonomous systems. I first got into tech by building my own PC, which sparked
-                        my curiosity about how hardware and software interact. 
-
+                            Hi, I’m Bernek Aujla, a computer engineering student at the University of British Columbia with a strong interest in 
+                            robotics, embedded systems, FPGA design, and autonomous systems. I first got into tech by building my own PC, which sparked
+                            my curiosity about how hardware and software interact. I am currently doing a co-op as an FPGA developer at Lucid Vision Labs,
+                            where I have gained hands-on experience in FFPGA RTL design, simulation, and on-hardware validation using VHDL.
                         </p>
-                        <p>
-                        </p>
-                        <p>
-                        Currently, I am working as an FPGA developer, where I design and optimize hardware modules and systems for high-performance
-                        applications. I enjoy combining my skills in FPGA, embedded systems, and software to build innovative solutions.
-                        </p>
-
                     </section>
 
                     <section class="skills card">
